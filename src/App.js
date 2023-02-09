@@ -1,16 +1,17 @@
-
 import './App.css';
 
 import React from 'react';
+import {Header, Users} from "./components";
 
 const App = () => {
-  return (
-      <div>
-           App
-      </div>
-  );
+    return (
+        <div>
+            <Header/>
+            <Users/>
+
+        </div>
+    );
 };
 
 
-
-export  {App};
+export {App};
