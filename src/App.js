@@ -1,21 +1,34 @@
 import './App.css';
 
 import React from 'react';
-import {Cars, Form} from "./components";
-import {useSelector} from "react-redux";
+import {Navigate, Route, Routes} from "react-router-dom";
+
+import {AuthRiquireLayout, MainLauout} from "./Layouts";
+import {CarsPage} from "./pages/CarsPage/CarsPage";
+import {LoginPage} from "./pages/LoginPage/LoginPage";
+import {RegisterPage} from "./pages/RegisterPage/RegisterPage";
 
 const App = () => {
-   const {loading}=useSelector (state=>state.cars);
     return (
-        <div>
-            <Form/>
-            <hr/>
-            {loading && <h1>Loading............</h1>}
-            <Cars/>
+        <Routes>
+            <Route path={'/'} element={<MainLauout/>}>
+                <Route index element={<Navigate to={'cars'}/>}/>
 
-        </div>
-    );
+                <Route element={<AuthRiquireLayout/>}>
+                    <Route path={'cars'} element={<CarsPage/>}/>
+                </Route>
+
+                <Route path={'login'} element={<LoginPage/>}/>
+                <Route path={'register'} element={<RegisterPage/>}/>
+            </Route>
+        </Routes>
+)
+
 };
 
 
-export {App};
+export
+    {
+        App
+    }
+;
