@@ -1,0 +1,24 @@
+{
+  "name": "sept-reacr-2022",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanna50/sept-reacr-2022.git"
+  },
+  "dependencies": {
+    "typescript": "^4.9.5 ",
+    "axios": "^0.27.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivanna50/sept-reacr-2022/issues"
+  },
+  "homepage": "https://github.com/ivanna50/sept-reacr-2022#readme",
+  "description": ""
+}
