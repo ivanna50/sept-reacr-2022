@@ -1,11 +1,16 @@
-import React from 'react';
+import {Component} from "react";
 
-const Posts = () => {
-    return (
-        <div>
-            Posts
-        </div>
-    );
-};
 
+class Posts extends Component{
+    constructor(props) {
+        super(propd);
+        this.state = {posts:[]}
+    }
+    render() {
+        return (
+            <div></div>
+        );
+    }
+
+}
 export {Posts};

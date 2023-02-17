@@ -1,11 +1,16 @@
-import React from 'react';
+import {Component} from "react";
 
-const Post = () => {
-    return (
-        <div>
-            Post
-        </div>
-    );
-};
 
+class Post extends Component{
+    constructor(props) {
+        super(propd);
+
+    }
+    render() {
+        return (
+            <div></div>
+        );
+    }
+
+}
 export {Post};
